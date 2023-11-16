@@ -1,0 +1,155 @@
+Practice Questions
+
+1. What are the two values of the Boolean data type? How do you write them?
+
+Ans-	* True
+	* False
+	These are written with an initial uppercase letter 'True' (1) and False(0).
+
+2. What are the three Boolean operators?
+
+Ans-	AND,OR,NOT
+
+3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+
+Ans-	AND OPERATOR 
+	True AND False - False
+	True AND True - True
+	False AND False - False
+	False AND True - False
+
+	OR OPERATOR 
+	True OR False - True
+	True OR True - True
+	False OR False - False
+	False OR True - True
+
+	NOT OPERATOR
+	NOT True - False
+	Not False - True
+
+4. What do the following expressions evaluate to?
+spam = 0
+if spam == 10:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+
+Ans-	False
+	False
+	True	
+	False	
+	False
+	True
+
+5. What are the six comparison operators?
+
+Ans-	* less than ( < )
+	* less than or equal to ( <= )
+	* greater than ( > )
+	* greater than or equal to ( >= )
+	* equal to ( == )
+	* not equal to ( != )
+
+
+6. What is the difference between the equal to operator and the assignment operator?
+
+Ans- 	* The == operator (equal to) asks whether two values are the same as each other.
+	* The = operator (assignment) puts the value on the right into the variable on the left.
+
+7. Explain what a condition is and where you would use one.
+
+Ans-	A condition refers to a Boolean expression or statement that evaluates to True or False. 
+	A flow control statement decides what to do based on whether its condition is True or False, and almost every flow control statement uses a condition.
+
+
+8. Identify the three blocks in this code:\
+spam = 0
+if spam == 10:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+
+Ans-	Outer Block
+	spam=0
+
+	First Conditional Block
+	if spam == 10:
+		print('eggs') will be executed
+
+	Nested Conditional Block (if-else statement inside the first block):
+	if spam > 5:
+		print('bacon') will be executed
+	else:
+		print('ham') will be executed
+
+	else conditional block
+		print('spam') will be executed
+
+
+9.Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+
+Ans- 	spam=int(input())
+	if spam==10:
+    		print('Hello')
+    	elif spam==2:
+		print('Howdy')
+        else:
+		print('spam')
+
+
+10. What keys can you press if your program is stuck in an infinite loop?
+
+Ans- 	CTRL + C 
+
+11. What is the difference between break and continue?
+
+Ans-	break
+	When the program execution reaches a break statement, the program execution breaks and terminate the entire loop.
+	continue
+	When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop and reevaluates the loop’s condition.
+
+
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+
+Ans-	range(10)
+	Executes from 0 to 9
+	
+	range(0,10)
+	Executes from 0 to 9
+
+	range(0,10,1)
+	Executed from 0 to 9 with increment 1
+
+13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+
+Ans-	
+for i in range(1,10+1):
+    print(i)
+
+i=1
+while i<=11:
+    print(i)
+    i+=1
+		
+14.If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+Ans- 	import spam
+	spam.bacon()	
+	
+abs() will return the absolute value of a number.
+Eg: 	print(abs(-10))
+	10
+
+round() takes in two numbers, one to be rounded, and one that specifies the number of decimal places to include.
+Eg:	print(round(17.24544,4))
+	17.25
+	
+

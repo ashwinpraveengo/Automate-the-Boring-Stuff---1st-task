@@ -1,0 +1,55 @@
+1. Write an assert statement that triggers an AssertionError if the variable spam is an integer less than 10.  
+Ans-    assert spam >= 10,"Variable 'spam' should be an integer greater than or equal to 10"
+
+
+2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other, even if their cases are different.  
+Ans-    assert eggs.upper()!=bacon.upper(),"Variables 'eggs' and 'bacon' should be different strings, even if cases are different"
+
+
+3. Write an assert statement that always triggers an AssertionError.  
+Ans-    assert False, "This assertion always triggers an error"
+
+
+4. What are the two lines that your program must have to be able to call logging.debug()?  
+Ans- 
+        ```python
+        import logging
+        logging.basicConfig(level=logging.DEBUG)
+        ```
+
+5. What are the two lines that your program must have to have logging.debug() send a logging message to a file named programLog.txt?  
+Ans-
+        python
+        import logging
+        logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)
+
+
+6. What are the five logging levels?  
+Ans-    DEBUG,INFO,WARNING,ERROR,CRITICAL
+
+
+7. What line of code can you add to disable all logging messages in your program?  
+Ans-    logging.disable(logging.CRITICAL)
+
+
+8. Why is using logging messages better than using print() to display the same message?  
+Ans-    * Logging allows to disable logging messages without removing the logging function calls.
+        * Logging mussages provides a timestamp
+
+
+9. What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?  
+Ans -   * Step Over: It executes the function call without stepping into it.
+        * Step In: It moves the debugger to function called.
+        * Step Out: It Executes the rest of the code until it steps out of the function which it is currently in.
+
+
+10. After you click Continue, when will the debugger stop?  
+    Ans - The debugger will stop when it reaches the next breakpoint or when the program completes execution.
+
+
+11. What is a breakpoint?  
+    Ans - A breakpoint is a specified point in the code where the debugger pauses execution, allowing you to inspect variables and step through the code.
+
+
+12. How do you set a breakpoint on a line of code in Mu?  
+    Ans - Click on the line number in the left margin of the code editor in Mu.
